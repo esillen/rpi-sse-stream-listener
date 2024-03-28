@@ -10,7 +10,7 @@ NOTIFICATION_TIME_SECONDS = 10
 PIN = 24
 URL = 'http://mysite.com/sse_stream/'
 GPIO.setmode(GPIO.BCM)
-GPIO.setup(23, GPIO.OUT)
+GPIO.setup(PIN, GPIO.OUT)
 
 messages = SSEClient(URL)
 for msg in messages:

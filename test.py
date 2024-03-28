@@ -6,7 +6,7 @@ except RuntimeError:
     print("Error importing RPi.GPIO! This is probably because you need superuser privileges.  You can achieve this by using 'sudo' to run your script")
 
 BLINK_TIME_SECONDS = 1
-PIN = 7
+PIN = 24
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(PIN, GPIO.OUT)
 
